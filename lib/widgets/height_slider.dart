@@ -54,18 +54,13 @@ class HeightSlider extends StatelessWidget {
               ),
             ],
           ),
-          SliderTheme(
-            data: SliderTheme.of(context).copyWith(
-              activeTrackColor: const Color(0xffE83D67),
-              inactiveTrackColor: const Color(0xff8D8E98),
-              thumbColor: const Color(0xffE83D67),
-            ),
-            child: Slider(
-              value: height.toDouble(),
-              min: 120,
-              max: 220,
-              onChanged: onChanged,
-            ),
+          Slider(
+            value: height.toDouble(),
+            min: 120,
+            max: 220,
+            onChanged: onChanged,
+            activeColor: const Color(0xffE83D67),
+            inactiveColor: const Color(0xff8D8E98),
           ),
         ],
       ),
