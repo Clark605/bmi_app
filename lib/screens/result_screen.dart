@@ -32,6 +32,7 @@ class ResultScreen extends StatelessWidget {
           Expanded(
             child: Container(
               margin: const EdgeInsets.all(15),
+              width: double.infinity,
               decoration: BoxDecoration(
                 color: const Color(0xff24263B),
                 borderRadius: BorderRadius.circular(12),
